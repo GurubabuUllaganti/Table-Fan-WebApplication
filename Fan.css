@@ -1,0 +1,46 @@
+body
+{
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img
+{
+    border: 10px solid aqua;
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+}
+button
+{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 4px 6px;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight:550;
+    border: none;
+    background-color: silver;
+    border-radius: 50%;
+}
+button:active
+{
+    box-shadow: 0px 10px 10px black;
+    transform: scale(0.95);
+}
+.main button:nth-last-child(5)
+{
+    background-color: lawngreen;
+}
+.main button:nth-last-child(4)
+{
+    background-color: red;
+}
+@keyframes fananim{
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
